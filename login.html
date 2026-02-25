@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Student Management</title>
+    <link rel="icon" type="image/svg+xml" href="school-icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="center-page">
+    <div id="loginToast" class="top-toast" role="status" aria-live="polite"></div>
+    <div class="login-layout">
+      <aside class="login-hero card">
+        <p class="eyebrow">School Project</p>
+        <h1>Student Management</h1>
+        <p class="muted">
+          Organize student profiles, grades, and records in one clean place.
+        </p>
+        <div class="hero-bullets">
+          <span>Quick login</span>
+          <span>Easy student CRUD</span>
+          <span>Pastel minimal dashboard</span>
+        </div>
+      </aside>
+
+      <main class="card auth-card">
+        <div class="monkey-widget" aria-hidden="true">
+          <div class="monkey-thought">
+            <div class="bubble-1"></div>
+            <div class="monkey-comment"><p>is it a username?</p></div>
+          </div>
+          <div class="img-wrapper">
+            <div class="monkey-face">
+              <img
+                src="file:///C:/Users/shuragha/.cursor/projects/c-Projects-MyApp/assets/c__Users_shuragha_AppData_Roaming_Cursor_User_workspaceStorage_c5f53adbc0426e8dd20aaf5da3e81d83_images_image-889a9530-8440-4df7-a54e-cd0fd2eecdb2.png"
+                alt="Monkey face"
+                onerror="this.onerror=null;this.src='assets/monkey-face.svg';"
+              />
+              <div class="eyes-wrapper">
+                <div class="eyes">
+                  <div class="eye-brow"></div>
+                  <div class="eye-ball"></div>
+                </div>
+                <div class="eyes">
+                  <div class="eye-brow"></div>
+                  <div class="eye-ball"></div>
+                </div>
+              </div>
+            </div>
+            <div class="monkey-hands" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <h2>Welcome Back</h2>
+        <p class="muted">Sign in to continue.</p>
+
+        <form id="loginForm" class="form-grid" method="post" action="login.html" autocomplete="off">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" autocomplete="off" required />
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required />
+
+          <button type="submit" class="primary-btn">Login</button>
+        </form>
+
+        <p id="errorMessage" class="error-message" aria-live="polite"></p>
+      </main>
+    </div>
+
+    <script src="js/config.js?v=3"></script>
+    <script src="js/session.js?v=3"></script>
+    <script src="js/login-ux.js?v=3"></script>
+    <script src="js/auth.js?v=5"></script>
+  </body>
+</html>

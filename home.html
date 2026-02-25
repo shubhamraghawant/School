@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Student Management</title>
+    <link rel="icon" type="image/svg+xml" href="school-icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home-page">
+    <header class="topbar">
+      <h1>School Dashboard</h1>
+      <div class="topbar-right">
+        <span id="welcomeUser"></span>
+        <button id="logoutBtn" class="secondary-btn" type="button">Logout</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card school-hero-card">
+        <p class="eyebrow">Academic Portal</p>
+        <h2>Welcome to Classroom Management</h2>
+        <p class="muted">
+          Select a class and choose how you want to interact with it: class teacher, time table, or students list.
+        </p>
+      </section>
+
+      <section class="card classroom-card">
+        <div class="classroom-controls">
+          <div class="control-item">
+            <label for="classSelect">Select Class</label>
+            <select id="classSelect"></select>
+          </div>
+        </div>
+
+        <div class="interaction-options">
+          <button class="option-btn active" data-view="teacher" type="button">Class Teacher</button>
+          <button class="option-btn" data-view="timetable" type="button">Time Table</button>
+          <button class="option-btn" data-view="students" type="button">Students List</button>
+        </div>
+
+        <section id="classContent" class="class-content"></section>
+      </section>
+    </main>
+
+    <script src="js/config.js?v=3"></script>
+    <script src="js/session.js?v=3"></script>
+    <script src="js/home.js?v=7"></script>
+  </body>
+</html>
